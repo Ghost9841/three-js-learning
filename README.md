@@ -1,4 +1,5 @@
-# three-js-learning
+# Simple Static
 
 
-Learning in simple html,csss,java and then vanilla and after that react with react three js direi components and library.
+Here in this branch it is static learning with threejs document.
+Just for practice and basic.
