@@ -1,3 +1,18 @@
+@keyframes cube-ro-animation {
+    0% {
+      color: #ff0000; /* red */
+      transform: scale(1);
+    }
+    50% {
+      color: #ffff00; /* yellow */
+      transform: scale(1.2);
+    }
+    100% {
+      color: #00ff00; /* green */
+      transform: scale(1);
+    }
+}
+
 #cube-ro{
     position: absolute;
     top: 100px;
@@ -5,8 +20,31 @@
     text-align: center;
     z-index: 100;
     display:block;
-    color : white;
+    animation: cube-ro-animation 2s infinite;
 }
+#footers a{
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    bottom:   0;
+    text-align: center;
+    width: 100%;
+    color : #ff0000; /* initial color */
+    animation: color-change-footer 2s infinite; /* animation */
+}
+
+@keyframes color-change-footer {
+    0% {
+      color: white; /* green */
+    }
+    50% {
+      color: #ff0000; /* red */
+    }
+    100% {
+      color: #0000ff; /* blue */
+    }
+  }
 * {
     margin: 0;
     overflow: hidden;
